@@ -1,0 +1,118 @@
+body {
+    font-family: 'Segoe UI';
+    background-color: #f5f7fa;
+    margin: 0;
+    padding: 0;
+}
+
+.titulo {
+    text-align: center;
+    padding: 20px 0;
+    color: #333;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.buscar-container {
+    position: relative;
+    max-width: 600px;
+    margin: 20px auto;
+    width: 100%;
+}
+
+.buscar {
+    width: 100%;
+    padding: 14px 18px 14px 44px;
+    font-size: 16px;
+    border-radius: 12px;
+    border: 1px solid #ddd;
+    outline: none;
+    background: white;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    transition: 0.2s;
+}
+
+.buscar:focus {
+    border-color: #2d8fdd;
+    box-shadow: 0 0 0 3px rgba(45,143,221,0.15);
+}
+
+.buscar-container i {
+    position: absolute;
+    left: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #888;
+    font-size: 16px;
+}
+
+.productos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 40px 20px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.producto {
+    background-color: #ffffff;
+    border: none;
+    padding: 0;
+    margin: 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.producto:hover {
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+    transform: translateY(-4px);
+}
+
+.imagenProducto {
+    display: block; 
+    margin: auto;
+    max-width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 0;
+}
+
+.nombreProducto {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    color: #1a1a1a;
+    padding: 16px 16px 8px 16px;
+    margin: 0;
+}
+
+.precioProducto {
+    font-size: 18px;
+    font-weight: 700;
+    color: #2c3e50;
+    padding: 8px 16px;
+}
+
+.categoriaProducto {
+    font-size: 15px;
+    color: #7f8c8d;
+    letter-spacing: 0.5px;
+    padding: 8px 16px;
+}
+
+.ratingProducto {
+    color: #f39c12;
+    font-size: 15px;
+    padding: 8px 16px;
+}
+
+.stockProducto {
+    font-size: 15px;
+    color: #27ae60;
+    padding: 8px 16px 16px 16px;
+    font-weight: 500;
+}
