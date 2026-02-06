@@ -8,11 +8,6 @@ fetch(`https://dummyjson.com/products/${id}`)
     .then(productos => {
         detalleDiv.innerHTML = "";
         detalleDiv.innerHTML += `
-            <button class="btn-regresar" onclick="history.back()">
-                <i class="fas fa-arrow-left"></i>
-                Regresar
-            </button>
-
             <div class="productoDetalle">
                 <h2 class="nombreProductoDetalle">${productos.title}</h2>
                 <img class="imagenProductoDetalle" src="${productos.thumbnail}" alt="${productos.title}">

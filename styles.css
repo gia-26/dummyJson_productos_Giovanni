@@ -14,36 +14,68 @@ body {
 }
 
 .buscar-container {
-    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
     max-width: 600px;
-    margin: 20px auto;
-    width: 100%;
+    margin: 2rem auto;
+    padding: 0 1rem;
 }
 
+/* Caja del input */
+.buscar-box {
+    position: relative;
+    flex: 1;
+}
+
+/* Input */
 .buscar {
-    width: 100%;
+    width: 85%;
     padding: 14px 18px 14px 44px;
-    font-size: 16px;
-    border-radius: 12px;
-    border: 1px solid #ddd;
+    font-size: 0.95rem;
+    border-radius: 14px;
+    border: 1px solid #e5e7eb;
     outline: none;
-    background: white;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-    transition: 0.2s;
+    background-color: #ffffff;
+    color: #111827;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
+/* Focus */
 .buscar:focus {
-    border-color: #2d8fdd;
-    box-shadow: 0 0 0 3px rgba(45,143,221,0.15);
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
 }
 
-.buscar-container i {
+/* Icono */
+.buscar-box i {
     position: absolute;
     left: 14px;
     top: 50%;
     transform: translateY(-50%);
-    color: #888;
-    font-size: 16px;
+    color: #9ca3af;
+    font-size: 15px;
+}
+
+/* Botón */
+#agregar-producto {
+    text-decoration: none;
+    padding: 10px 16px;
+    border-radius: 14px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    background-color: #2563eb;
+    color: #ffffff;
+    border: 1px solid transparent;
+    transition: background-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+    white-space: nowrap;
+}
+
+/* Hover */
+#agregar-producto:hover {
+    background-color: #1e40af;
+    box-shadow: 0 6px 16px rgba(37, 99, 235, 0.25);
+    transform: translateY(-2px);
 }
 
 .productos {
